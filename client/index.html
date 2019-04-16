@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+
+  <!-- Our CSS style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+      <p class="set">Set Point</p>
+
+    <div class="range-slider">
+      <input class="range-slider__range" type="range" value="180" min="100" max="210">
+      <span class="range-slider__value">0</span>
+    </div>
+
+    <div id="display">00.0</div>
+    <p class="current">Current temperature</p>
+
+
+
+    <!-- On/Off switch -->
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+      <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <!-- Script -->
+    <script type="text/javascript" src="tempCheck.js"></script>
+
+</body>
+
+</html>
